@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>TableElement.qml</file>
+        <file>TableHeader.qml</file>
+        <file>pictures.qrc</file>
+        <file>microprocessor1.jpg</file>
+        <file>projector_3.jpg</file>
+        <file>projector_1.jpg</file>
+        <file>projector_2.jpg</file>
+    </qresource>
+</RCC>
