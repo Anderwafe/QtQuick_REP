@@ -503,36 +503,37 @@ ApplicationWindow {
                     clip: true
                     ScrollBar.vertical.policy: ScrollBar.AlwaysOn
                     padding: 15
-                    contentHeight: charactBlock.height + picturesBlock.height
+                    contentHeight: charactBlock.height
                     Rectangle{
                         height: 100
                         width: parent.width
-                        color: "red"
+                        color: "transparent"
                     }
 
                     Grid
                     {
                         anchors.fill: parent
-                        rows: 3; columns: 1
+                        rows: 1; columns: 3
                         spacing: 15
                         Layout.fillWidth: true
+                        Layout.fillHeight: true
 
                         Rectangle
                         {
                             id: picturesBlock
-                            height: 225
-                            width: parent.width
+                            height: parent.height
+                            width: 400
                             ScrollView{
                                 anchors.fill: parent
                                 clip: true
-                                ScrollBar.horizontal.policy: ScrollBar.AlwaysOn
-                                //ScrollBar.vertical.policy: ScrollBar.AlwaysOff
+                                //ScrollBar.horizontal.policy: ScrollBar.AlwaysOn
+                                ScrollBar.vertical.policy: ScrollBar.AlwaysOff
 
 
 
                                 Grid{
                                     anchors.fill: parent
-                                    rows: 1; columns: 3;
+                                    rows: 3; columns: 1;
                                     spacing: 10
                                     padding: 10
                                     Rectangle{
@@ -568,8 +569,8 @@ ApplicationWindow {
 
 
                         Rectangle{
-                            width: parent.width
-                            height: 1
+                            width: 1
+                            height: parent.height
                             color: "#e6e3e3"
                         }
                         Rectangle{
